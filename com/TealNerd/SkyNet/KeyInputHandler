@@ -12,10 +12,10 @@ Minecraft mc = Minecraft.getMinecraft();
     public void onKeyInput(InputEvent.KeyInputEvent event) {
         if(SkyNet.toggle.isPressed()){
         	if(!SkyNet.isEnabled){
-        	mc.thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_AQUA + "[SkyNet] "+ EnumChatFormatting.YELLOW + "SkyNet Enabled"));
+        	mc.thePlayer.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[SkyNet] "+ EnumChatFormatting.YELLOW + "SkyNet Enabled"));
         	SkyNet.isEnabled = true;
         	}else if(SkyNet.isEnabled){
-        	mc.ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(EnumChatFormatting.DARK_AQUA + "[SkyNet] "+ EnumChatFormatting.YELLOW + "SkyNet Disabled"));
+        	mc.ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[SkyNet] "+ EnumChatFormatting.YELLOW + "SkyNet Disabled"));
         	SkyNet.isEnabled = false;
         	}
         }              
